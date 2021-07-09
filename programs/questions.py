@@ -133,11 +133,18 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    num = arg1
-    for char in num:
-        list1 = list1.append(char)
-    for n in range(0, len(list1)):
-        list1[n] = [int(x) for x in list1(n)]
+    num = list(arg1)
+    n=0
+    list1=[]
+    sum = 0
+    for n in range(0,len(num)):
+        for char in num[n]:
+            sum = sum + char
+            list1.append(sum)
+    highest = max(list1)
+    return highest
+
+    
 
 
 
@@ -253,7 +260,7 @@ def seven(input):
 
 def eight(input):
     num = input
-    value =1
+    value = 1
     for n in range(1, num+1):
             
         value = value*n
@@ -280,7 +287,16 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-    pass
+    word = inputString
+    find = char
+    for char in word:
+        if char == find:
+            index = word.index(char) - 1
+        else:
+            index = -1
+    return index
+
+
 
 
     # <QUESTION 10>
@@ -301,4 +317,16 @@ def nine(inputString, char):
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def ten(string, int, char):
-    pass
+    word = list(string)
+    num = int
+    char = char
+    for n in range(0,len(word)):
+        if word[n]==char:
+
+            return n+1==num
+        else:
+            return False
+
+    
+            
+
