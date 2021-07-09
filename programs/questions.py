@@ -133,7 +133,13 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    pass
+    num = arg1
+    for char in num:
+        list1 = list1.append(char)
+    for n in range(0, len(list1)):
+        list1[n] = [int(x) for x in list1(n)]
+
+
 
 
     # <QUESTION 5>
@@ -162,7 +168,16 @@ def four(arg1):
     # help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
-    pass
+    list1 = input[0].split()
+    word = "False"
+    for word in list1:
+        num = list.index(("True") - 2)
+        name = name.append(list1(num))
+        name = list(set(name))
+    else:
+        name = []
+    return name
+    
 
 
     # <QUESTION 6>
@@ -183,8 +198,17 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-    pass
-
+    word = input
+    if "cie" in word:
+        return False
+    elif "cei" in word:
+        return True
+    elif "ei" in word:
+        return False
+    elif "ie" in word:
+        return True
+    else:
+        return True
 
     # <QUESTION 7>
 
@@ -201,7 +225,15 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+    word = input.lower()
+    n=0
+    vowels = ["a","e","i","o","u"]
+    for char in word:
+        if vowels.__contains__(char):
+            n=n+1
+    return n
+
+    
 
 
     # <QUESTION 8>
@@ -220,7 +252,13 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
+    num = input
+    value =1
+    for n in range(1, num+1):
+            
+        value = value*n
+    return value
+
 
 
     # <QUESTION 9>
