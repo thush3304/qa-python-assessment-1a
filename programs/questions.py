@@ -98,7 +98,16 @@ def two(input):
     # No Hints for this question
 
 def three(arg1):
-    pass
+    num = arg1
+    if num%3==0 and num%5==0:
+        word = "fizzbuzz"
+    elif num%3==0:
+        word = "fizz"
+    elif num%5==0:
+        word = "buzz"
+    else:
+        word = "null"
+    return word
 
 
     # <QUESTION 4>
